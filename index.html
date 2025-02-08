@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fullstack Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom styles for smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Particle Animation Styles */
+      #particles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white shadow-lg z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-3">
+          <div class="text-xl font-bold text-indigo-600">My Portfolio</div>
+          <div class="space-x-4">
+            <a
+              href="#hero"
+              class="hover:text-indigo-500 transition duration-300"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="hover:text-indigo-500 transition duration-300"
+              >About Me</a
+            >
+            <a
+              href="#skills"
+              class="hover:text-indigo-500 transition duration-300"
+              >Skills</a
+            >
+            <a
+              href="#portfolio"
+              class="hover:text-indigo-500 transition duration-300"
+              >Portfolio</a
+            >
+            <a
+              href="#testimonials"
+              class="hover:text-indigo-500 transition duration-300"
+              >Testimonials</a
+            >
+            <a
+              href="#contact"
+              class="hover:text-indigo-500 transition duration-300"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="relative bg-gradient-to-r from-indigo-600 to-purple-700 text-white py-24"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+          <!-- Left Content (Text) -->
+          <div class="animate-fade-in-left">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">
+              Hi, I'm John Doe<br />Your Next Fullstack Partner
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-8">
+              A passionate fullstack developer with expertise in building
+              scalable and efficient web applications.
+            </p>
+            <a
+              href="#about"
+              class="inline-block bg-white text-indigo-600 font-medium py-3 px-8 rounded-md hover:bg-indigo-500 hover:text-white transition duration-300 shadow-lg"
+            >
+              Learn More
+            </a>
+          </div>
+
+          <!-- Right Content (Image/Illustration) -->
+          <div class="animate-fade-in-right">
+            <img
+              src="https://via.placeholder.com/500x500?text=Developer+Illustration"
+              alt="Developer Illustration"
+              class="w-full max-w-lg mx-auto rounded-lg shadow-2xl"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Background Gradient Overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-transparent via-indigo-600 to-purple-700 opacity-80"
+      ></div>
+
+      <!-- Particle Animation (Optional) -->
+      <div class="absolute inset-0 z-0">
+        <canvas id="particles" class="w-full h-full"></canvas>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section
+      id="about"
+      class="py-16 bg-gradient-to-br from-gray-100 to-gray-200"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <!-- Image -->
+          <div class="animate-fade-in-left">
+            <img
+              src="https://via.placeholder.com/400x500"
+              alt="Profile Picture"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+          <!-- Text -->
+          <div class="animate-fade-in-right">
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <p class="text-gray-700 leading-relaxed">
+              I am a fullstack developer with experience in building scalable
+              web applications. My expertise lies in React, Next.js, Laravel,
+              Node.js, TypeScript, and more.
+            </p>
+            <p class="text-gray-700 mt-4">
+              Outside of coding, I enjoy exploring new technologies, reading
+              books, and hiking.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section
+      id="skills"
+      class="py-16 bg-gradient-to-tr from-purple-700 to-indigo-600 text-white"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-8 animate-fade-in-up">Tech Stack</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-8">
+          <div class="text-center animate-fade-in-up">
+            <img
+              src="https://via.placeholder.com/50?text=React"
+              alt="React"
+              class="w-12 h-12 mx-auto"
+            />
+          </div>
+          <div class="text-center animate-fade-in-up">
+            <img
+              src="https://via.placeholder.com/50?text=Next.js"
+              alt="Next.js"
+              class="w-12 h-12 mx-auto"
+            />
+          </div>
+          <div class="text-center animate-fade-in-up">
+            <img
+              src="https://via.placeholder.com/50?text=Laravel"
+              alt="Laravel"
+              class="w-12 h-12 mx-auto"
+            />
+          </div>
+          <div class="text-center animate-fade-in-up">
+            <img
+              src="https://via.placeholder.com/50?text=Node.js"
+              alt="Node.js"
+              class="w-12 h-12 mx-auto"
+            />
+          </div>
+          <div class="text-center animate-fade-in-up">
+            <img
+              src="https://via.placeholder.com/50?text=TypeScript"
+              alt="TypeScript"
+              class="w-12 h-12 mx-auto"
+            />
+          </div>
+          <div class="text-center animate-fade-in-up">
+            <img
+              src="https://via.placeholder.com/50?text=Flutter"
+              alt="Flutter"
+              class="w-12 h-12 mx-auto"
+            />
+          </div>
+          <div class="text-center animate-fade-in-up">
+            <img
+              src="https://via.placeholder.com/50?text=MySQL"
+              alt="MySQL"
+              class="w-12 h-12 mx-auto"
+            />
+          </div>
+          <div class="text-center animate-fade-in-up">
+            <img
+              src="https://via.placeholder.com/50?text=MongoDB"
+              alt="MongoDB"
+              class="w-12 h-12 mx-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section
+      id="portfolio"
+      class="py-16 bg-gradient-to-br from-gray-100 to-gray-200"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-8 animate-fade-in-up">My Portfolio</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Portfolio Card 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg animate-fade-in-up">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Project 1"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-bold">E-commerce Platform</h3>
+            <p class="text-gray-600">
+              A fully functional e-commerce platform built with React and
+              Node.js.
+            </p>
+          </div>
+          <!-- Portfolio Card 2 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg animate-fade-in-up">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Project 2"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-bold">Social Media App</h3>
+            <p class="text-gray-600">
+              A social media app built with Flutter for cross-platform support.
+            </p>
+          </div>
+          <!-- Portfolio Card 3 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg animate-fade-in-up">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Project 3"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-bold">Blog Engine</h3>
+            <p class="text-gray-600">
+              A dynamic blog engine powered by Laravel and MySQL.
+            </p>
+          </div>
+          <!-- Portfolio Card 4 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg animate-fade-in-up">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Project 4"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-bold">Dashboard UI</h3>
+            <p class="text-gray-600">
+              A responsive dashboard UI designed with Tailwind CSS.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section
+      id="testimonials"
+      class="py-16 bg-gradient-to-tr from-purple-700 to-indigo-600 text-white"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-8 animate-fade-in-up">
+          What People Say About Me
+        </h2>
+        <p class="text-gray-300 mb-12">
+          Here are some kind words from my clients and colleagues.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonial Card 1 -->
+          <div
+            class="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg animate-fade-in-up"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="https://via.placeholder.com/50"
+                alt="Avatar"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h3 class="text-lg font-medium">Jane Doe</h3>
+                <p class="text-sm text-gray-400">
+                  Senior Developer at TechCorp
+                </p>
+              </div>
+            </div>
+            <p class="text-gray-300">
+              "John is an exceptional developer with a keen eye for detail."
+            </p>
+          </div>
+          <!-- Testimonial Card 2 -->
+          <div
+            class="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg animate-fade-in-up"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="https://via.placeholder.com/50"
+                alt="Avatar"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h3 class="text-lg font-medium">Michael Smith</h3>
+                <p class="text-sm text-gray-400">CTO at StartupHub</p>
+              </div>
+            </div>
+            <p class="text-gray-300">
+              "Working with John was a delightful experience."
+            </p>
+          </div>
+          <!-- Testimonial Card 3 -->
+          <div
+            class="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg animate-fade-in-up"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="https://via.placeholder.com/50"
+                alt="Avatar"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h3 class="text-lg font-medium">Emily Johnson</h3>
+                <p class="text-sm text-gray-400">
+                  Product Manager at WebSolutions
+                </p>
+              </div>
+            </div>
+            <p class="text-gray-300">
+              "John's expertise has been invaluable to our team."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section
+      id="contact"
+      class="py-16 bg-gradient-to-br from-gray-100 to-gray-200"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-bold mb-4 animate-fade-in-up">
+            Get in Touch
+          </h2>
+          <p class="text-gray-700">
+            Feel free to reach out to me for collaborations or just to say hi!
+          </p>
+        </div>
+        <div class="max-w-md mx-auto space-y-4 animate-fade-in-up">
+          <form action="#" method="POST" class="space-y-4">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+                class="mt-1 p-2 w-full border rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your-email@example.com"
+                required
+                class="mt-1 p-2 w-full border rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+              />
+            </div>
+            <div>
+              <label
+                for="message"
+                class="block text-sm font-medium text-gray-700"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Write your message here..."
+                required
+                class="mt-1 p-2 w-full border rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+              ></textarea>
+            </div>
+            <div class="flex justify-center">
+              <button
+                type="submit"
+                class="inline-block bg-indigo-600 text-white font-medium py-2 px-6 rounded-md hover:bg-indigo-500 transition duration-300"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-900 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-sm">&copy; 2023 John Doe. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Particle Animation Script -->
+    <script>
+      // Optional: Add particle animation for a modern look
+      document.addEventListener("DOMContentLoaded", () => {
+        const canvas = document.getElementById("particles");
+        const ctx = canvas.getContext("2d");
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        window.addEventListener("resize", () => {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+        });
+
+        const particles = [];
+        const particleCount = 50;
+
+        function createParticle() {
+          return {
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            size: Math.random() * 5 + 1,
+            speedX: Math.random() * 2 - 1,
+            speedY: Math.random() * 2 - 1,
+          };
+        }
+
+        for (let i = 0; i < particleCount; i++) {
+          particles.push(createParticle());
+        }
+
+        function updateParticles() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+          particles.forEach((particle, index) => {
+            ctx.beginPath();
+            ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+            ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
+            ctx.fill();
+
+            particle.x += particle.speedX;
+            particle.y += particle.speedY;
+
+            if (particle.x > canvas.width || particle.x < 0) {
+              particle.speedX = -particle.speedX;
+            }
+            if (particle.y > canvas.height || particle.y < 0) {
+              particle.speedY = -particle.speedY;
+            }
+          });
+
+          requestAnimationFrame(updateParticles);
+        }
+
+        updateParticles();
+      });
+    </script>
+  </body>
+</html>
